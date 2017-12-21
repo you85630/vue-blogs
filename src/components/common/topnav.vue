@@ -1,13 +1,13 @@
 <template>
   <div class="topnav">
-    <div class="topnav-main">
+    <div class="container">
       <dl>
-        <dt>名字
+        <dt>Yogi
           <span>博客</span>
         </dt>
         <dd>
-          <p>这里是说明</p>
-          <p>这里是说明</p>
+          <p>关注WEB前端技术</p>
+          <p>学习如逆水行舟，不进则退</p>
         </dd>
       </dl>
       <ul>
@@ -36,7 +36,7 @@ $theme: #9cc;
   box-shadow: 0px 2px 5px #eee;
   background-color: #fff;
 }
-.topnav-main {
+.container {
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
