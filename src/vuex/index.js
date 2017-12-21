@@ -14,7 +14,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '1',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -26,7 +26,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '2',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -38,7 +38,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '3',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -50,7 +50,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '4',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -62,7 +62,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '5',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -74,7 +74,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '6',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -86,7 +86,7 @@ export default new Vuex.Store({
         label: 'vue',
         labellink: '',
         time: '2017年12月21日',
-        read: '1234',
+        read: '7',
         link: '',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
@@ -95,66 +95,69 @@ export default new Vuex.Store({
       }
     ],
     // 标签列表
-    labellist: [
-      {
-        title: '标签',
-        names: [
-          {
-            name: '1'
-          },
-          {
-            name: '2'
-          },
-          {
-            name: '3'
-          },
-          {
-            name: '4'
-          },
-          {
-            name: '5'
-          }
-        ]
-      }
-    ],
+    labellist: {
+      title: '标签',
+      names: [
+        {
+          name: '1'
+        },
+        {
+          name: '2'
+        },
+        {
+          name: '3'
+        },
+        {
+          name: '4'
+        },
+        {
+          name: '5'
+        }
+      ]
+    },
     // 广告
-    newsList: [
-      {
-        title: '广告',
-        names: [
-          {
-            name: '1',
-            link: '',
-            time: '2017-12'
-          },
-          {
-            name: '2',
-            link: '',
-            time: '2017-12'
-          },
-          {
-            name: '3',
-            link: '',
-            time: '2017-12'
-          },
-          {
-            name: '4',
-            link: '',
-            time: '2017-12'
-          },
-          {
-            name: '5',
-            link: '',
-            time: '2017-12'
-          }
-        ]
-      }
-    ]
+    newsList: {
+      title: '广告',
+      names: [
+        {
+          name:
+            '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦',
+          link: '',
+          time: '2017-12'
+        },
+        {
+          name: '啦啦啦啦啦啦啦',
+          link: '',
+          time: '2017-12'
+        },
+        {
+          name: '3',
+          link: '',
+          time: '2017-12'
+        },
+        {
+          name: '4',
+          link: '',
+          time: '2017-12'
+        },
+        {
+          name: '5',
+          link: '',
+          time: '2017-12'
+        }
+      ]
+    },
+    // 观光者
+    likeNow: {
+      title: '观光者',
+      likes: ''
+    }
   },
   getters: {
     blogList: state => state.blogList,
     labellist: state => state.labellist,
-    newsList: state => state.newsList
+    newsList: state => state.newsList,
+    likeNow: state => state.likeNow
   },
   actions: {
     // 获取数据

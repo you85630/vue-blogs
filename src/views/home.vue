@@ -7,13 +7,17 @@
       </div>
     </div>
     <div class="right">
-      <div class="list" v-for="li in newsList">
-        <right-title :name="li.title"></right-title>
-        <new-list :news="li.names"></new-list>
+      <div class="list" v-if="likeNow.likes">
+        <right-title :name="likeNow.title"></right-title>
+        <like-now :like="likeNow.likes"></like-now>
       </div>
-      <div class="list" v-for="li in labellist">
-        <right-title :name="li.title"></right-title>
-        <my-lable :list="li.names"></my-lable>
+      <div class="list" v-if="newsList.names">
+        <right-title :name="newsList.title"></right-title>
+        <news-list :news="newsList.names"></news-list>
+      </div>
+      <div class="list" v-if="labellist.names">
+        <right-title :name="labellist.title"></right-title>
+        <my-lable :list="labellist.names"></my-lable>
       </div>
     </div>
   </div>
@@ -21,10 +25,10 @@
 
 <script>
 import newBlogs from 'components/modules/blogs'
-
 import rightTitle from 'components/modules/rightTitle'
 import myLable from 'components/modules/lables'
-import newList from 'components/modules/newList'
+import newsList from 'components/modules/newsList'
+import likeNow from 'components/modules/likeNow'
 
 import { mapGetters } from 'vuex'
 export default {
@@ -32,13 +36,15 @@ export default {
     newBlogs,
     rightTitle,
     myLable,
-    newList
+    newsList,
+    likeNow
   },
   computed: {
     ...mapGetters([
       'blogList',
       'labellist',
-      'newsList'
+      'newsList',
+      'likeNow'
     ])
   }
 }

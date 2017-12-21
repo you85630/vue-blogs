@@ -30,6 +30,10 @@ $theme: #9cc;
     }
     a {
       font-size: 12px;
+      width: 80%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
       &:hover {
         color: $theme;
       }
