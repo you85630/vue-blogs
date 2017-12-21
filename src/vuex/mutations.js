@@ -3,6 +3,7 @@ import * as types from './types'
 export default {
   // 获取数据
   [types.GET_DATA] (state, res) {
+    // 观光者总人数
     let list = state.blogList
     let arr = []
     let like = 0

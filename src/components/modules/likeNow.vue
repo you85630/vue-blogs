@@ -14,7 +14,7 @@ export default {
     }
   },
   created () {
-    let myDate = this.$moment().format('YYYY-MM-DD')
+    let myDate = this.moment().format('YYYY-MM-DD')
     this.times = myDate
   }
 }

@@ -15,7 +15,7 @@ import 'assets/css/animate.css'
 import 'font-awesome/css/font-awesome.css'
 // 引入时间戳
 import moment from 'moment'
-Vue.prototype.$moment = moment
+Vue.prototype.moment = moment
 
 Vue.config.productionTip = false
 

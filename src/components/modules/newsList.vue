@@ -29,11 +29,11 @@ $theme: #9cc;
       margin-bottom: 0;
     }
     a {
-      font-size: 12px;
+      overflow: hidden;
       width: 80%;
       text-overflow: ellipsis;
       white-space: nowrap;
-      overflow: hidden;
+      font-size: 12px;
       &:hover {
         color: $theme;
       }
