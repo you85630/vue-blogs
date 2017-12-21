@@ -26,11 +26,10 @@ export default {
 .footer {
   border-top: 1px solid #eee;
   background-color: #fff;
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
   .container {
-    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
     font-size: 12px;
     color: #999;

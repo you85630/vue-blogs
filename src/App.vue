@@ -31,7 +31,7 @@ export default {
 }
 .container {
   min-height: 78vh;
-  padding: 20px;
+  padding: 20px 0;
   background-color: #f9f9f9;
 }
 </style>
