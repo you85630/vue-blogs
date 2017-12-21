@@ -4,7 +4,7 @@ Vue.use(Router)
 
 const Home = () => import('views/home')
 const blogList = () => import('views/blogList')
-const label = () => import('views/label')
+const labelList = () => import('views/labelList')
 const aboutMe = () => import('views/aboutMe')
 
 export default new Router({
@@ -19,17 +19,17 @@ export default new Router({
       component: Home
     },
     {
-      path: '/bloglist',
+      path: '/blogList',
       name: 'blogList',
       component: blogList
     },
     {
-      path: '/label',
-      name: 'label',
-      component: label
+      path: '/labelList',
+      name: 'labelList',
+      component: labelList
     },
     {
-      path: '/aboutme',
+      path: '/aboutMe',
       name: 'aboutMe',
       component: aboutMe
     }

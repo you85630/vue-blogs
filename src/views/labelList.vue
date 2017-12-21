@@ -1,5 +1,5 @@
 <template>
-  <div class="label">
+  <div class="label-list">
     标签
   </div>
 </template>
@@ -11,6 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.label {
+.label-list {
 }
 </style>

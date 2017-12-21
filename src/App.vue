@@ -30,8 +30,8 @@ export default {
   user-select: none;
 }
 .container {
-  min-height: 78vh;
   padding: 20px 0;
+  min-height: 78vh;
   background-color: #f9f9f9;
 }
 </style>

@@ -5,6 +5,8 @@ import App from './App'
 
 // 重置全局样式
 import 'assets/css/reset.css'
+// 引入sdsd
+import 'font-awesome/css/font-awesome.css'
 // 引入动画样式
 import 'assets/css/animate.css'
 // 引入路由
