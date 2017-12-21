@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  min-width: 950px;
   font-size: 0;
 
   user-select: none;
