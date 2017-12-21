@@ -7,8 +7,6 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    // 顶部导航
-    topNav: [],
     // 博客列表
     blogList: [
       {
@@ -154,7 +152,6 @@ export default new Vuex.Store({
     ]
   },
   getters: {
-    topNav: state => state.topNav,
     blogList: state => state.blogList,
     labellist: state => state.labellist,
     newsList: state => state.newsList

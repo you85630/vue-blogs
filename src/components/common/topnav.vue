@@ -20,12 +20,25 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
-  computed: {
-    ...mapGetters([
-      'topNav'
-    ])
+  data () {
+    return {
+      topNav: [
+        {
+          name: '首页',
+          link: '/home'
+        }, {
+          name: '列表',
+          link: '/blogList'
+        }, {
+          name: '标签',
+          link: '/labelList'
+        }, {
+          name: '关于我',
+          link: '/aboutMe'
+        }
+      ]
+    }
   }
 }
 </script>
