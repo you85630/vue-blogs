@@ -1,12 +1,21 @@
 <template>
   <div class="blog-list">
-    文章列表
+    <new-blogs :list="blogList" :now="blogList.length"></new-blogs>
   </div>
 </template>
 
 <script>
+import newBlogs from 'components/modules/blogs'
+import { mapGetters } from 'vuex'
 export default {
-
+  components: {
+    newBlogs
+  },
+  computed: {
+    ...mapGetters([
+      'blogList'
+    ])
+  }
 }
 </script>
 

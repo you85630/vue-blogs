@@ -1,6 +1,10 @@
 <template>
   <div class="labels">
-    <p v-for="li in list">{{li.name}}</p>
+    <p v-for="li in list">
+      <router-link to="/">
+        {{li.name}}
+      </router-link>
+    </p>
   </div>
 </template>
 
@@ -19,24 +23,24 @@ $theme: #9cc;
   flex-wrap: wrap;
   padding: 4%;
   padding-bottom: 0;
+  justify-content: space-around;
   p {
     overflow: hidden;
-    margin-right: 5%;
+    margin: 0 2%;
     margin-bottom: 4%;
-    padding: 4px 2%;
-    width: 26%;
-    background-color: #f9f9f9;
-    color: #999;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 12px;
     cursor: pointer;
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:hover {
-      background-color: $theme;
-      color: #fff;
+    a {
+      display: block;
+      background-color: #f9f9f9;
+      color: #999;
+      padding: 2px 10px;
+      &:hover {
+        background-color: $theme;
+        color: #fff;
+      }
     }
   }
 }

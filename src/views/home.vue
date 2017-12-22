@@ -63,7 +63,6 @@ $radius: 4px;
 .home {
   display: flex;
   margin: 0 auto;
-  padding: 0 20px;
   max-width: 1200px;
   .left {
     margin-right: 2%;
