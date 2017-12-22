@@ -1,1 +1,0 @@
-webpackJsonp([2],{Ln1t:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"about-me"},[this._v("\n  关于我\n")])},staticRenderFns:[]},s=n("VU/8")({},i,!1,function(t){n("RMCi")},"data-v-5f40080f",null);e.default=s.exports},RMCi:function(t,e){}});

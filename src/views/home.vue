@@ -62,8 +62,6 @@ $theme: #9cc;
 $radius: 4px;
 .home {
   display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
   .left {
     margin-right: 2%;
     width: 72%;

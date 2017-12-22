@@ -1,6 +1,6 @@
 <template>
   <div class="about-me">
-    关于我
+    哼哼哼~
   </div>
 </template>
 
@@ -12,5 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .about-me {
+  font-size: 12px;
+  background-color: #fff;
 }
 </style>
