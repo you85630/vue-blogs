@@ -7,13 +7,13 @@
       </div>
     </div>
     <div class="right">
-      <div class="list">
-        <my-title :name="timeNow.title"></my-title>
-        <my-time></my-time>
-      </div>
       <div class="list" v-if="likeNow.likes">
         <my-title :name="likeNow.title"></my-title>
         <my-like :like="likeNow.likes"></my-like>
+      </div>
+      <div class="list">
+        <my-title :name="timeNow.title"></my-title>
+        <my-time></my-time>
       </div>
       <div class="list" v-if="newsList.names">
         <my-title :name="newsList.title" :tomore="newsList.more"></my-title>
