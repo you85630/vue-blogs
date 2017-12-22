@@ -151,13 +151,18 @@ export default new Vuex.Store({
     likeNow: {
       title: '观光者',
       likes: ''
+    },
+    // 日历
+    timeNow: {
+      title: '日历'
     }
   },
   getters: {
     blogList: state => state.blogList,
     labellist: state => state.labellist,
     newsList: state => state.newsList,
-    likeNow: state => state.likeNow
+    likeNow: state => state.likeNow,
+    timeNow: state => state.timeNow
   },
   actions: {
     // 获取数据

@@ -7,6 +7,10 @@
       </div>
     </div>
     <div class="right">
+      <div class="list">
+        <right-title :name="timeNow.title"></right-title>
+        <time-now></time-now>
+      </div>
       <div class="list" v-if="likeNow.likes">
         <right-title :name="likeNow.title"></right-title>
         <like-now :like="likeNow.likes"></like-now>
@@ -29,6 +33,7 @@ import rightTitle from 'components/modules/rightTitle'
 import myLable from 'components/modules/lables'
 import newsList from 'components/modules/newsList'
 import likeNow from 'components/modules/likeNow'
+import timeNow from 'components/modules/timeNow'
 
 import { mapGetters } from 'vuex'
 export default {
@@ -37,14 +42,16 @@ export default {
     rightTitle,
     myLable,
     newsList,
-    likeNow
+    likeNow,
+    timeNow
   },
   computed: {
     ...mapGetters([
       'blogList',
       'labellist',
       'newsList',
-      'likeNow'
+      'likeNow',
+      'timeNow'
     ])
   }
 }

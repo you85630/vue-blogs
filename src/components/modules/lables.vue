@@ -17,12 +17,12 @@ $theme: #9cc;
 .labels {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 4%;
   padding-bottom: 0;
   p {
     overflow: hidden;
     margin-right: 5%;
-    margin-bottom: 10px;
+    margin-bottom: 4%;
     padding: 4px 2%;
     width: 26%;
     background-color: #f9f9f9;

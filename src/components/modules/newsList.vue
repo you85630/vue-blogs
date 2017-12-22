@@ -20,11 +20,12 @@ export default {
 <style lang="scss" scoped>
 $theme: #9cc;
 .news-list {
-  padding: 10px;
+  padding: 4%;
   li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 4%;
+    line-height: 1;
     &:last-child {
       margin-bottom: 0;
     }

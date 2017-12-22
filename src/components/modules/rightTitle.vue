@@ -15,7 +15,8 @@ export default {
 
 <style lang="scss" scoped>
 .right-title {
-  padding: 10px;
+  padding: 4%;
+  line-height: 1;
   border-bottom: 1px solid #eee;
   background-color: #fbfbfb;
   font-size: 16px;

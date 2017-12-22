@@ -13,9 +13,6 @@ import 'assets/css/reset.css'
 import 'assets/css/animate.css'
 // 引入fontawesome
 import 'font-awesome/css/font-awesome.css'
-// 引入时间戳
-import moment from 'moment'
-Vue.prototype.moment = moment
 
 Vue.config.productionTip = false
 
@@ -24,7 +21,6 @@ new Vue({
   el: '#app',
   router,
   store,
-  moment,
   template: '<App/>',
   components: {
     App
