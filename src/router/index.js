@@ -6,7 +6,7 @@ const Home = () => import('views/home')
 const blogList = () => import('views/blogList')
 const labelList = () => import('views/labelList')
 const aboutMe = () => import('views/aboutMe')
-const news = () => import('views/News')
+const newsList = () => import('views/newsList')
 
 export default new Router({
   routes: [
@@ -35,9 +35,9 @@ export default new Router({
       component: aboutMe
     },
     {
-      path: '/news',
-      name: 'news',
-      component: news
+      path: '/newsList',
+      name: 'newsList',
+      component: newsList
     }
   ]
 })

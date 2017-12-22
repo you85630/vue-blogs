@@ -1,5 +1,5 @@
 <template>
-  <div class="time-now">{{times|formatDate}}</div>
+  <div class="time">{{times|formatDate}}</div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 $theme: #9cc;
-.time-now {
+.time {
   padding: 20% 10%;
   color: $theme;
   font-size: 26px;

@@ -1,6 +1,29 @@
 <template>
   <div class="about-me">
-    哼哼哼~
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
+    <p> 哼哼哼~</p>
   </div>
 </template>
 
@@ -12,7 +35,10 @@ export default {
 
 <style lang="scss" scoped>
 .about-me {
-  font-size: 12px;
+  padding: 4%;
+  border: 1px solid #eee;
+  border-radius: 4px;
   background-color: #fff;
+  font-size: 12px;
 }
 </style>

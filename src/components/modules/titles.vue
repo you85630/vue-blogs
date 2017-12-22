@@ -1,5 +1,5 @@
 <template>
-  <div class="right-title">
+  <div class="titles">
     <span>{{name}}</span>
     <router-link :to="tomore" v-if="tomore">more&nbsp;&gt;</router-link>
   </div>
@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 $theme: #9cc;
-.right-title {
+.titles {
   padding: 4%;
   line-height: 1;
   border-bottom: 1px solid #eee;

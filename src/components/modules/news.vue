@@ -1,5 +1,5 @@
 <template>
-  <ul class="news-list">
+  <ul class="news">
     <li v-for="(li,index) in news" v-if="index<show">
       <router-link :to="li.link">
         {{li.name}}
@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 $theme: #9cc;
-.news-list {
+.news {
   padding: 4%;
   background-color: #fff;
   li {

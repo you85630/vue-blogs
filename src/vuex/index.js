@@ -164,7 +164,7 @@ export default new Vuex.Store({
     // 公告
     newsList: {
       title: '公告',
-      more: '/news',
+      more: '/newsList',
       names: [
         {
           name:
