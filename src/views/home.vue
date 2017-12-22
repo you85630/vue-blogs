@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="left">
-      <new-blogs :list="blogList" :now="5"></new-blogs>
+      <new-blogs :list="blogList" :show="5"></new-blogs>
       <div class="blogs-more">
         <router-link to="/blogList">查看更多</router-link>
       </div>
@@ -16,12 +16,12 @@
         <like-now :like="likeNow.likes"></like-now>
       </div>
       <div class="list" v-if="newsList.names">
-        <right-title :name="newsList.title"></right-title>
-        <news-list :news="newsList.names"></news-list>
+        <right-title :name="newsList.title" :tomore="newsList.more"></right-title>
+        <news-list :news="newsList.names" :show="5"></news-list>
       </div>
-      <div class="list" v-if="labellist.names">
-        <right-title :name="labellist.title"></right-title>
-        <my-lable :list="labellist.names"></my-lable>
+      <div class="list" v-if="labelList.names">
+        <right-title :name="labelList.title" :tomore="labelList.more"></right-title>
+        <my-lable :list="labelList.names" :show="10"></my-lable>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@ export default {
   computed: {
     ...mapGetters([
       'blogList',
-      'labellist',
+      'labelList',
       'newsList',
       'likeNow',
       'timeNow'
@@ -59,7 +59,6 @@ export default {
 
 <style lang="scss" scoped>
 $theme: #9cc;
-$radius: 4px;
 .home {
   display: flex;
   .left {
@@ -83,7 +82,7 @@ $radius: 4px;
 .list {
   margin-bottom: 20px;
   border: 1px solid #eee;
-  border-radius: $radius;
+  border-radius: 4px;
   background-color: #fff;
   &:last-child {
     margin-bottom: 0;

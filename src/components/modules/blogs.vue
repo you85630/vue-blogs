@@ -1,6 +1,6 @@
 <template>
   <div class="blogs">
-    <dl v-for="(li,index) in list" :key="li.index" v-if="index<now">
+    <dl v-for="(li,index) in list" :key="li.index" v-if="index<show">
       <dt>
         <router-link :to="li.link"><img :src="li.cover" :alt="li.title"></router-link>
       </dt>
@@ -26,16 +26,18 @@
 
 <script>
 export default {
-  props: ['list', 'now']
+  props: [
+    'list',
+    'show'
+  ]
 }
 </script>
 
 <style lang="scss" scoped>
 $theme: #9cc;
-$radius: 4px;
 .blogs {
   border: 1px solid #eee;
-  border-radius: $radius;
+  border-radius: 4px;
   background-color: #fff;
   dl {
     display: flex;

@@ -1,6 +1,6 @@
 <template>
   <ul class="news-list">
-    <li v-for="li in news">
+    <li v-for="(li,index) in news" v-if="index<show">
       <router-link :to="li.link">
         {{li.name}}
       </router-link>
@@ -12,7 +12,8 @@
 <script>
 export default {
   props: [
-    'news'
+    'news',
+    'show'
   ]
 }
 </script>
@@ -21,6 +22,7 @@ export default {
 $theme: #9cc;
 .news-list {
   padding: 4%;
+  background-color: #fff;
   li {
     display: flex;
     justify-content: space-between;

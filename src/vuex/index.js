@@ -95,8 +95,9 @@ export default new Vuex.Store({
       }
     ],
     // 标签列表
-    labellist: {
+    labelList: {
       title: '标签',
+      more: '/labelList',
       names: [
         {
           name: '啦啦啦啦啦啦啦',
@@ -160,9 +161,10 @@ export default new Vuex.Store({
         }
       ]
     },
-    // 广告
+    // 公告
     newsList: {
-      title: '广告',
+      title: '公告',
+      more: '/news',
       names: [
         {
           name:
@@ -229,7 +231,7 @@ export default new Vuex.Store({
   },
   getters: {
     blogList: state => state.blogList,
-    labellist: state => state.labellist,
+    labelList: state => state.labelList,
     newsList: state => state.newsList,
     likeNow: state => state.likeNow,
     timeNow: state => state.timeNow

@@ -1,26 +1,26 @@
 <template>
-  <div class="label-list">
-    <my-lable :list="labelList.names" :show="labelList.names.length"></my-lable>
+  <div class="news">{{newsList}}
+    <news-list :news="newsList.names" :show="newsList.names.length"></news-list>
   </div>
 </template>
 
 <script>
-import myLable from 'components/modules/lables'
+import newsList from 'components/modules/newsList'
 import { mapGetters } from 'vuex'
 export default {
   components: {
-    myLable
+    newsList
   },
   computed: {
     ...mapGetters([
-      'labelList'
+      'newsList'
     ])
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.label-list {
+.news {
   border: 1px solid #eee;
   border-radius: 4px;
 }

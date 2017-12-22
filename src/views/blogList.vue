@@ -1,6 +1,6 @@
 <template>
   <div class="blog-list">
-    <new-blogs :list="blogList" :now="blogList.length"></new-blogs>
+    <new-blogs :list="blogList" :show="blogList.length"></new-blogs>
   </div>
 </template>
 

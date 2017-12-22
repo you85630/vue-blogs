@@ -1,7 +1,7 @@
 <template>
   <div class="labels">
-    <p v-for="li in list">
-      <router-link to="/">
+    <p v-for="(li,index) in list" v-if="index<show">
+      <router-link :to="li.link">
         {{li.name}}
       </router-link>
     </p>
@@ -11,7 +11,8 @@
 <script>
 export default {
   props: [
-    'list'
+    'list',
+    'show'
   ]
 }
 </script>
@@ -19,20 +20,13 @@ export default {
 <style lang="scss" scoped>
 $theme: #9cc;
 .labels {
-  display: flex;
-  flex-wrap: wrap;
   padding: 4%;
-  padding-bottom: 0;
-  justify-content: space-around;
+  background-color: #fff;
   p {
-    overflow: hidden;
-    margin: 0 2%;
-    margin-bottom: 4%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 12px;
-    cursor: pointer;
+    margin: 1% 2%;
+    display: inline-block;
     a {
+      font-size: 12px;
       display: block;
       background-color: #f9f9f9;
       color: #999;
