@@ -2,23 +2,23 @@
   <div class="blogs">
     <dl v-for="(li,index) in list" :key="li.index" v-if="index<show">
       <dt>
-        <router-link :to="li.link"><img :src="li.cover" :alt="li.title"></router-link>
+        <router-link :to="{path:'blogInfo',query:{id:index}}"><img :src="li.cover" :alt="li.title"></router-link>
       </dt>
       <dd>
         <div class="title">
-          <router-link :to="li.link">{{li.title}}</router-link>
+          <router-link :to="{path:'blogInfo',query:{id:index}}">{{li.title}}</router-link>
         </div>
         <div class="other">
           <p>
             <i class="fa fa-clock-o"></i>{{li.time}}</p>
           <p>
-            <i class="fa fa-eye"></i>阅读&lpar;{{li.read}}&rpar;</p>
+            <i class="fa fa-eye"></i>阅读（{{li.read}}）</p>
           <p>
             <router-link :to="li.labellink">
               <i class="fa fa-bookmark"></i>{{li.label}}</router-link>
           </p>
         </div>
-        <div class="info">{{li.info}}</div>
+        <div class="info">{{li.message}}</div>
       </dd>
     </dl>
   </div>
@@ -50,11 +50,14 @@ $theme: #9cc;
       background-color: #f9f9f9;
     }
     dt {
+      overflow: hidden;
       margin-right: 2%;
       width: 28%;
-      height: 10vw;
+      height: 18vh;
+      background-color: #fff;
+      text-align: center;
       img {
-        width: 100%;
+        width: auto;
         height: 100%;
       }
     }
