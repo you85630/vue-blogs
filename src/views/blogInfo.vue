@@ -45,6 +45,8 @@ $theme: #9cc;
 }
 .intro {
   text-align: center;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #eee;
   .title {
     font-size: 30px;
     margin-bottom: 2%;
