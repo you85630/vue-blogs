@@ -3,18 +3,21 @@
     <top-nav></top-nav>
     <div class="container">
       <router-view/>
+      <back-top></back-top>
     </div>
     <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-import topNav from './components/common/topnav'
-import myFooter from './components/common/footer'
+import topNav from 'components/common/topnav'
+import myFooter from 'components/common/footer'
+import backTop from 'components/common/backTop'
 export default {
   components: {
     topNav,
-    myFooter
+    myFooter,
+    backTop
   },
   created () {
     this.$store.dispatch('getData')
@@ -25,6 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 #app {
+  position: relative;
   font-size: 0;
 
   user-select: none;

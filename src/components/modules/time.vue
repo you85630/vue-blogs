@@ -7,7 +7,7 @@ import { formatDate } from 'assets/js/date'
 export default {
   data () {
     return {
-      times: '11'
+      times: ''
     }
   },
   filters: {
@@ -22,9 +22,9 @@ export default {
 <style lang="scss" scoped>
 $theme: #9cc;
 .time {
-  padding: 20% 10%;
+  padding: 10%;
   color: $theme;
-  font-size: 26px;
   text-align: center;
+  font-size: 26px;
 }
 </style>

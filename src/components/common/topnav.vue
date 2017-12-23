@@ -46,9 +46,9 @@ export default {
 <style lang="scss" scoped>
 $theme: #9cc;
 .topnav {
+  width: 100%;
   border-bottom: 1px solid #eee;
   background-color: #fff;
-  box-shadow: 0px 2px 5px #eee;
 }
 .container {
   display: flex;
@@ -89,7 +89,7 @@ ul {
   align-items: flex-end;
   li {
     margin-right: 50px;
-    padding: 30px 0;
+    padding: 10% 0;
     &:last-child {
       margin-right: 0;
     }
