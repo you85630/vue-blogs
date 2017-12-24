@@ -1,18 +1,18 @@
 <template>
   <div class="blog-info">
     <div class="intro">
-      <div class="title">{{li.title}}</div>
+      <div class="title">{{blog.title}}</div>
       <p>
-        <i class="fa fa-clock-o"></i>{{li.time}}</p>
+        <i class="fa fa-clock-o"></i>{{blog.time}}</p>
       <p>
-        <i class="fa fa-eye"></i>阅读（{{li.read}}）</p>
+        <i class="fa fa-eye"></i>阅读（{{blog.read}}）</p>
       <p>
-        <router-link :to="li.labellink">
-          <i class="fa fa-bookmark"></i>{{li.label}}</router-link>
+        <router-link :to="{path:'blogList',query:{key:blog.label}}">
+          <i class="fa fa-bookmark"></i>{{blog.label}}</router-link>
       </p>
     </div>
-    <div class="message">{{li.message}}</div>
-    <div class="info">{{li.info}}</div>
+    <div class="message">{{blog.message}}</div>
+    <div class="info">{{blog.info}}</div>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      li: {}
+      blog: {}
     }
   },
   computed: {
@@ -30,7 +30,7 @@ export default {
     ])
   },
   created () {
-    this.li = this.blogList[this.$route.query.id]
+    this.blog = this.blogList[this.$route.query.id]
   }
 }
 </script>

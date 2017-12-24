@@ -1,6 +1,6 @@
 <template>
   <div class="blogs">
-    <dl v-for="(li,index) in list" :key="li.index" v-if="index<show">
+    <dl v-for="(li,index) in nowblogList" :key="li.index" v-if="index<show">
       <dt>
         <router-link :to="{path:'blogInfo',query:{id:index}}"><img :src="li.cover" :alt="li.title"></router-link>
       </dt>
@@ -29,7 +29,22 @@ export default {
   props: [
     'list',
     'show'
-  ]
+  ],
+  data () {
+    return {
+      nowblogList: []
+    }
+  },
+  created () {
+    let key = this.$route.query.key
+    if (key) {
+      let list = this.list
+      let one = list.filter(e => e.label === key)
+      this.nowblogList = one
+    } else {
+      this.nowblogList = this.list
+    }
+  }
 }
 </script>
 
