@@ -25,7 +25,7 @@ $theme: #9cc;
   display: flex;
   justify-content: space-between;
   span {
-    font-size: 16px;
+    font-size: 18px;
   }
   a {
     color: $theme;

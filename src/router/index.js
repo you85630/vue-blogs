@@ -8,6 +8,7 @@ const labelList = () => import('views/labelList')
 const aboutMe = () => import('views/aboutMe')
 const newsList = () => import('views/newsList')
 const blogInfo = () => import('views/blogInfo')
+const newsInfo = () => import('views/newsInfo')
 
 export default new Router({
   routes: [
@@ -44,6 +45,11 @@ export default new Router({
       path: '/newsList',
       name: 'newsList',
       component: newsList
+    },
+    {
+      path: '/newsInfo',
+      name: 'newsInfo',
+      component: newsInfo
     }
   ]
 })

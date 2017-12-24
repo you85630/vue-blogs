@@ -14,11 +14,11 @@
           <p>
             <i class="fa fa-eye"></i>阅读（{{li.read}}）</p>
           <p>
-            <router-link :to="li.labellink">
+            <router-link :to="{path:'blogList',query:{key:li.label}}">
               <i class="fa fa-bookmark"></i>{{li.label}}</router-link>
           </p>
         </div>
-        <div class="info">{{li.message}}</div>
+        <div class="message">{{li.message}}</div>
       </dd>
     </dl>
   </div>
@@ -72,12 +72,12 @@ $theme: #9cc;
         }
       }
       .other,
-      .info {
+      .message {
         margin-top: 10px;
-        color: #999;
         font-size: 12px;
       }
       .other {
+        color: #999;
         display: flex;
         p {
           margin-right: 20px;
@@ -92,7 +92,7 @@ $theme: #9cc;
           }
         }
       }
-      .info {
+      .message {
         overflow: hidden;
         height: 86px;
         line-height: 1.5;

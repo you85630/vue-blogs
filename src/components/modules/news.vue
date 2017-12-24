@@ -1,8 +1,8 @@
 <template>
   <ul class="news">
     <li v-for="(li,index) in news" v-if="index<show">
-      <router-link :to="li.link">
-        {{li.name}}
+      <router-link :to="{path:'newsInfo',query:{id:index}}">
+        {{li.title}}
       </router-link>
       <span>{{li.time}}</span>
     </li>
@@ -36,7 +36,7 @@ $theme: #9cc;
       width: 80%;
       text-overflow: ellipsis;
       white-space: nowrap;
-      font-size: 12px;
+      font-size: 14px;
       &:hover {
         color: $theme;
       }

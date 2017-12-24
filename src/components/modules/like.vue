@@ -12,6 +12,6 @@ export default {
 $theme: #9cc;
 .like {
   padding: 4%;
-  font-size: 16px;
+  font-size: 14px;
 }
 </style>
