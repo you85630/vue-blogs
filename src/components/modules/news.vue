@@ -19,7 +19,7 @@ export default {
   ],
   components: {
     dataNone
-  },
+  }
 }
 </script>
 
