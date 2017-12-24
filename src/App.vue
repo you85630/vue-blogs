@@ -18,11 +18,7 @@ export default {
     topNav,
     myFooter,
     backTop
-  },
-  created () {
-    this.$store.dispatch('getData')
   }
-
 }
 </script>
 
