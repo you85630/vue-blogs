@@ -18,6 +18,12 @@ export default {
     topNav,
     myFooter,
     backTop
+  },
+  created () {
+    // 获取文章
+    this.$store.dispatch('getBlogs')
+    // 获取公告
+    this.$store.dispatch('getNews')
   }
 }
 </script>

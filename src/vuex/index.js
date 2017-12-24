@@ -12,7 +12,6 @@ export default new Vuex.Store({
       {
         title: '11这里是标题',
         label: 'vue',
-        labellink: '',
         time: '2017-12-21',
         read: '1',
         cover:
@@ -25,7 +24,6 @@ export default new Vuex.Store({
       {
         title: '22这里是标题',
         label: 'vue',
-        labellink: '',
         time: '2017-12-21',
         read: '2',
         cover:
@@ -37,7 +35,6 @@ export default new Vuex.Store({
       {
         title: '这里是标题',
         label: 'JavaScript',
-        labellink: '',
         time: '2017-12-21',
         read: '3',
         cover:
@@ -49,7 +46,6 @@ export default new Vuex.Store({
       {
         title: '这里是标题',
         label: 'node',
-        labellink: '',
         time: '2017-12-21',
         read: '4',
         cover:
@@ -61,7 +57,6 @@ export default new Vuex.Store({
       {
         title: '这里是标题',
         label: 'CSS',
-        labellink: '',
         time: '2017-12-21',
         read: '5',
         cover:
@@ -73,7 +68,6 @@ export default new Vuex.Store({
       {
         title: '这里是标题',
         label: 'HTML',
-        labellink: '',
         time: '2017-12-21',
         read: '6',
         cover:
@@ -85,7 +79,6 @@ export default new Vuex.Store({
       {
         title: '这里是标题',
         label: 'angular',
-        labellink: '',
         time: '2017-12-21',
         read: '7',
         cover:
@@ -109,81 +102,72 @@ export default new Vuex.Store({
         {
           title: '1啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦',
           time: '2013-02',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '2啦啦啦啦啦啦啦',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '3',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '4',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '5',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '6',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '7',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '8',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
         {
           title: '9',
           time: '2017-12',
-          label: '广告',
+          label: '公告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         },
@@ -192,7 +176,6 @@ export default new Vuex.Store({
           time: '2017-12',
           label: '广告',
           read: '1',
-          labellink: '',
           message:
             '啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦'
         }
@@ -218,12 +201,12 @@ export default new Vuex.Store({
   actions: {
     // 获取文章
     getBlogs: ({ commit }, key) => {
-      api.get('/topNav').then(res => {
+      api.get('/getBlogs').then(res => {
         commit('GET_BLOGS', res.data)
       })
     },
     getNews: ({ commit }, key) => {
-      api.get('/topNav').then(res => {
+      api.get('/getNews').then(res => {
         commit('GET_NEWS', res.data)
       })
     }

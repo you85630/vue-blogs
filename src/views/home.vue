@@ -53,12 +53,6 @@ export default {
       'likeNow',
       'timeNow'
     ])
-  },
-  created () {
-    // 获取文章
-    this.$store.dispatch('getBlogs')
-    // 获取公告
-    this.$store.dispatch('getNews')
   }
 }
 </script>

@@ -3,6 +3,7 @@ import * as types from './types'
 export default {
   // 获取文章
   [types.GET_BLOGS] (state, res) {
+    state.blogList = res
     let list = state.blogList
     let arr = []
     // 获取标签
