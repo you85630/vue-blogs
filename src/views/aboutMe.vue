@@ -24,7 +24,7 @@
           <i class="fa fa-envelope-o"></i>Email：</span>you85630@foxmail.com</p>
       <p>
         <span>
-          <i class="fa fa-briefcase"></i>就职：</span>上海思来氏信息咨询有限公司</p>
+          <i class="fa fa-briefcase"></i>就职：</span>上海某互联网公司</p>
     </div>
     <div class="other">
       <p>~~~ end ~~~</p>
