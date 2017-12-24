@@ -99,53 +99,7 @@ export default new Vuex.Store({
     labelList: {
       title: '标签',
       more: '/labelList',
-      names: [
-        {
-          name: 'vue'
-        },
-        {
-          name: 'node'
-        },
-        {
-          name: 'node'
-        },
-        {
-          name: 'vue'
-        },
-        {
-          name: 'HTML'
-        },
-        {
-          name: 'CSS'
-        },
-        {
-          name: 'CSS'
-        },
-        {
-          name: 'HTML'
-        },
-        {
-          name: 'JavaScript'
-        },
-        {
-          name: 'JavaScript'
-        },
-        {
-          name: 'JavaScript'
-        },
-        {
-          name: 'HTML'
-        },
-        {
-          name: 'angular'
-        },
-        {
-          name: 'angular'
-        },
-        {
-          name: 'angular'
-        }
-      ]
+      names: []
     },
     // 公告
     newsList: {
@@ -262,10 +216,15 @@ export default new Vuex.Store({
     timeNow: state => state.timeNow
   },
   actions: {
-    // 获取数据
-    getData: ({ commit }, key) => {
+    // 获取文章
+    getBlogs: ({ commit }, key) => {
       api.get('/topNav').then(res => {
-        commit('GET_DATA', res.data)
+        commit('GET_BLOGS', res.data)
+      })
+    },
+    getNews: ({ commit }, key) => {
+      api.get('/topNav').then(res => {
+        commit('GET_NEWS', res.data)
       })
     }
   },
