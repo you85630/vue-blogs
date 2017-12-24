@@ -2,7 +2,7 @@
   <div class="home">
     <div class="left">
       <my-blogs :list="blogList" :show="5"></my-blogs>
-      <div class="blogs-more">
+      <div class="blogs-more" v-if="blogList.length>5">
         <router-link to="/blogList">查看更多</router-link>
       </div>
     </div>
@@ -15,11 +15,11 @@
         <my-title :name="timeNow.title"></my-title>
         <my-time></my-time>
       </div>
-      <div class="list" v-if="newsList.names">
+      <div class="list">
         <my-title :name="newsList.title" :tomore="newsList.more"></my-title>
         <my-news :news="newsList.names" :show="5"></my-news>
       </div>
-      <div class="list" v-if="labelList.names">
+      <div class="list">
         <my-title :name="labelList.title" :tomore="labelList.more"></my-title>
         <my-lable :list="labelList.names" :show="10"></my-lable>
       </div>

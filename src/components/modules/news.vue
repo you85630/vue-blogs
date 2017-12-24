@@ -6,15 +6,20 @@
       </router-link>
       <span>{{li.time}}</span>
     </li>
+    <data-none v-if="!news.length"></data-none>
   </ul>
 </template>
 
 <script>
+import dataNone from 'components/common/dataNone'
 export default {
   props: [
     'news',
     'show'
-  ]
+  ],
+  components: {
+    dataNone
+  },
 }
 </script>
 

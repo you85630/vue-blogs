@@ -22,6 +22,6 @@ export default {
   },
   // 获取新闻
   [types.GET_NEWS] (state, res) {
-    state.newsList = res
+    state.newsList.names = res
   }
 }

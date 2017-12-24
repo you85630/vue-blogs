@@ -6,15 +6,20 @@
         <span>（{{li.len}}）</span>
       </router-link>
     </p>
+    <data-none v-if="!nowList.length"></data-none>
   </div>
 </template>
 
 <script>
+import dataNone from 'components/common/dataNone'
 export default {
   data () {
     return {
       nowList: []
     }
+  },
+  components: {
+    dataNone
   },
   props: [
     'list',

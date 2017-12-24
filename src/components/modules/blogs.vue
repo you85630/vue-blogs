@@ -21,10 +21,12 @@
         <div class="message">{{li.message}}</div>
       </dd>
     </dl>
+    <data-none v-if="!nowblogList.length"></data-none>
   </div>
 </template>
 
 <script>
+import dataNone from 'components/common/dataNone'
 export default {
   props: [
     'list',
@@ -34,6 +36,9 @@ export default {
     return {
       nowblogList: []
     }
+  },
+  components: {
+    dataNone
   },
   created () {
     let key = this.$route.query.key
