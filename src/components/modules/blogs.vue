@@ -44,6 +44,11 @@ export default {
     } else {
       this.nowblogList = this.list
     }
+  },
+  watch: {
+    '$route' () {
+      location.reload()
+    }
   }
 }
 </script>
