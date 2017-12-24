@@ -2,7 +2,8 @@
   <div class="labels">
     <p v-for="(li,index) in nowList" v-if="index<show">
       <router-link :to="{path:'blogList',query:{key:li.name}}">
-        {{li.name}}（{{len.count}}）
+        {{li.name}}
+        <span>（{{li.len}}）</span>
       </router-link>
     </p>
   </div>
@@ -12,7 +13,6 @@
 export default {
   data () {
     return {
-      len: '',
       nowList: []
     }
   },
@@ -21,33 +21,29 @@ export default {
     'show'
   ],
   created () {
-    let list = this.list
+    // 计算个数
     let arr = []
-    for (var i = 0; i < list.length;) {
-      var count = 0
-      for (var j = i; j < list.length; j++) {
-        if (list[i].name === list[j].name) {
+    let result = this.list
+    result.sort()
+    for (let i = 0; i < result.length;) {
+      let count = 0
+      for (let j = i; j < result.length; j++) {
+        if (result[i].name === result[j].name) {
           count++
         }
       }
       arr.push({
-        count: count
+        name: result[i].name,
+        len: count
       })
       i += count
     }
-    for (var k = 0; k < arr.length; k++) {
-      this.len = arr[k]
+
+    let list = []
+    for (let k = 0; k < arr.length; k++) {
+      list.push(arr[k])
     }
-    // 去重
-    let nowlist = []
-    let set = new Set()
-    list.forEach((tab) => {
-      if (!set.has(tab.name)) {
-        nowlist.push(tab)
-        set.add(tab.name)
-      }
-    })
-    this.nowList = nowlist
+    this.nowList = list
   }
 }
 </script>

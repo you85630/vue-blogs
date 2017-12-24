@@ -15,9 +15,6 @@ export default {
     ...mapGetters([
       'labelList'
     ])
-  },
-  created () {
-
   }
 }
 </script>

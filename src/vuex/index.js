@@ -13,7 +13,7 @@ export default new Vuex.Store({
         title: '11这里是标题',
         label: 'vue',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '1',
         cover:
           'https://hbimg.b0.upaiyun.com/d2dc9dd15179e457ddc77c08e98b309ec1907bce10769-nc0k9y_fw658',
@@ -26,7 +26,7 @@ export default new Vuex.Store({
         title: '22这里是标题',
         label: 'vue',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '2',
         cover:
           'https://hbimg.b0.upaiyun.com/651dfb7d1414b7b48751ea600124818a451fd1cb82a4c-Nc6OKH_fw658',
@@ -38,7 +38,7 @@ export default new Vuex.Store({
         title: '这里是标题',
         label: 'JavaScript',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '3',
         cover:
           'https://hbimg.b0.upaiyun.com/2cf1fc8b0e8d6ff99ae7ffa930e4cf638f66f3f437f2b-EoHF9u_fw658',
@@ -50,7 +50,7 @@ export default new Vuex.Store({
         title: '这里是标题',
         label: 'node',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '4',
         cover:
           'https://hbimg.b0.upaiyun.com/2e9c403f65428a1a0ddfba92f7e783fa17c5e4cbfddf-3bph1v_fw658',
@@ -62,7 +62,7 @@ export default new Vuex.Store({
         title: '这里是标题',
         label: 'CSS',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '5',
         cover:
           'https://hbimg.b0.upaiyun.com/9eed1a9c0a0c48c2b382354a6db6cd015ffc1dcb1c7b0-bZUpcz_fw658',
@@ -74,7 +74,7 @@ export default new Vuex.Store({
         title: '这里是标题',
         label: 'HTML',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '6',
         cover:
           'https://hbimg.b0.upaiyun.com/852de62cf89a8b84b94484335033c1f8c12fdf0c10c6d-1TFrDo_fw658',
@@ -86,7 +86,7 @@ export default new Vuex.Store({
         title: '这里是标题',
         label: 'angular',
         labellink: '',
-        time: '2017年12月21日',
+        time: '2017-12-21',
         read: '7',
         cover:
           'http://img.hb.aicdn.com/e5e3a88e02c5d531a2202d42c0c815978f9ac8af17ece-0L5ime_fw658',
