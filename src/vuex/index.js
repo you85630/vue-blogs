@@ -41,12 +41,12 @@ export default new Vuex.Store({
   actions: {
     // 获取文章
     getBlogs: ({ commit }, key) => {
-      api.get('/getBlogs').then(res => {
+      api.get('/blogslist').then(res => {
         commit('GET_BLOGS', res.data)
       })
     },
     getNews: ({ commit }, key) => {
-      api.get('/getNews').then(res => {
+      api.get('/newslist').then(res => {
         commit('GET_NEWS', res.data)
       })
     }

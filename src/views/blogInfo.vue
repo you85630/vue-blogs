@@ -12,12 +12,14 @@
       </p>
     </div>
     <div class="message">{{blog.message}}</div>
-    <div class="info">{{blog.info}}</div>
+    <div class="info" v-html="showMarkdown">{{blog.info}}</div>
   </div>
 </template>
 
 <script>
+import marked from 'marked'
 import { mapGetters } from 'vuex'
+
 export default {
   data () {
     return {
@@ -27,7 +29,11 @@ export default {
   computed: {
     ...mapGetters([
       'blogList'
-    ])
+    ]),
+    showMarkdown: function () {
+      let info = marked(this.blog.info, { sanitize: true })
+      return info
+    }
   },
   created () {
     this.blog = this.blogList[this.$route.query.id]

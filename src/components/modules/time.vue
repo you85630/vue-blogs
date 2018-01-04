@@ -1,20 +1,18 @@
 <template>
-  <div class="time">{{times|formatDate}}</div>
+  <div class="time">{{times}}</div>
 </template>
 
 <script>
-import { formatDate } from 'assets/js/date'
+import moment from 'moment'
+
 export default {
   data () {
     return {
       times: ''
     }
   },
-  filters: {
-    formatDate () {
-      let date = new Date()
-      return formatDate(date, 'yyyy-MM-dd')
-    }
+  created () {
+    this.times = moment().format('YYYY-MM-DD HH:mm')
   }
 }
 </script>
