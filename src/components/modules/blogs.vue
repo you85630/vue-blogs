@@ -119,8 +119,8 @@ $theme: #9cc;
       }
       .message {
         overflow: hidden;
-        height: 86px;
-        line-height: 1.5;
+        height: 12.5vw;
+        line-height: 1.6;
       }
     }
   }
