@@ -12,7 +12,7 @@ export default {
     }
   },
   created () {
-    this.times = moment().format('YYYY-MM-DD HH:mm')
+    this.times = moment().format('YYYY-MM-DD')
   }
 }
 </script>

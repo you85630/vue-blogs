@@ -21,11 +21,6 @@ export default new Vuex.Store({
       more: '/newsList',
       names: []
     },
-    // 观光者
-    likeNow: {
-      title: '观光者',
-      likes: ''
-    },
     // 日历
     timeNow: {
       title: '日历'
@@ -35,18 +30,17 @@ export default new Vuex.Store({
     blogList: state => state.blogList,
     labelList: state => state.labelList,
     newsList: state => state.newsList,
-    likeNow: state => state.likeNow,
     timeNow: state => state.timeNow
   },
   actions: {
     // 获取文章
     getBlogs: ({ commit }, key) => {
-      api.get('/blogslist').then(res => {
+      api.get('/api/blogslist').then(res => {
         commit('GET_BLOGS', res.data)
       })
     },
     getNews: ({ commit }, key) => {
-      api.get('/newslist').then(res => {
+      api.get('/api/newslist').then(res => {
         commit('GET_NEWS', res.data)
       })
     }
@@ -58,18 +52,11 @@ export default new Vuex.Store({
       let list = state.blogList
       let arr = []
       // 获取标签
-      let like = 0
       for (let i = 0; i < list.length; i++) {
         arr.push(list[i].read)
         // 标签列表
         state.labelList.names.push({ name: list[i].label })
       }
-      arr.forEach(e => {
-        let i = parseInt(e)
-        like += i
-      })
-      // 观光者总人数
-      state.likeNow.likes += like
     },
     // 获取新闻
     [types.GET_NEWS] (state, res) {
