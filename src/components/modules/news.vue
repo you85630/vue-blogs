@@ -38,7 +38,7 @@ $theme: #9cc;
     }
     a {
       overflow: hidden;
-      width: 80%;
+      width: 70%;
       text-overflow: ellipsis;
       white-space: nowrap;
       font-size: 14px;
