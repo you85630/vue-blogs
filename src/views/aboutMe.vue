@@ -1,14 +1,14 @@
 <template>
   <div class="about-me">
     <div class="one">
-      <p>About me?</p>
-      <p>咳咳咳~~~</p>
-      <p>那就说来话长了~</p>
-      <p>容我慢慢道来~</p>
+      <p>啦啦啦</p>
+      <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦~~~</p>
+      <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦~</p>
+      <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦~</p>
       <img src="./../assets/img/1.png" alt="">
-      <p>严肃脸</p>
+      <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
     </div>
-    <div class="resume">
+    <div class="resume" v-if="false">
       <div class="cover">
         <p><img src="./../assets/img/cover.jpg" alt=""></p>
       </div>

@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="container">
       &copy;
-      <span>{{time}}</span>Yogi-尤金金关注web前端技术
+      <span>{{time}}</span>关注web前端技术
     </div>
   </div>
 </template>

@@ -2,12 +2,12 @@
   <div class="topnav">
     <div class="container">
       <dl>
-        <dt>Yogi's
+        <dt>前端
           <span>博客</span>
         </dt>
         <dd>
           <p>关注WEB前端技术</p>
-          <p>学习如逆水行舟，不进则退</p>
+          <p>学如逆水行舟，不进则退</p>
         </dd>
       </dl>
       <ul>
